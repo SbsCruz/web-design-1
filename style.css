@@ -1,0 +1,11 @@
+[name="petsize"] {
+  margin: 15px;
+  display: block;
+}
+
+#survey-form {
+  background-color: #968eb0;
+  padding: 20px;
+  max-width: 75%;
+  display: block;
+}
