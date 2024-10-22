@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 id="title">Pet Project</h1>
+
+    <!-- Description -->
+    <p id="description">This is a website for StackBuilders Training course</p>
+
+    <!-- Form -->
+    <form action="submit" id="survey-form">
+      <!-- Lables - Inputs -->
+      <label for="name" id="name-label">
+        name
+        <input type="text" name="name" id="name" required placeholder="name" />
+      </label>
+      <label for="email" id="email-label">
+        email
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email"
+          required
+        />
+      </label>
+      <label for="number" id="number-label">
+        number
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="10"
+          placeholder="number"
+          onerror="()=>'just enter numbes please'"
+        />
+      </label>
+
+      <!-- Dropdown -->
+      <select name="dropdown" id="dropdown">
+        <option value="dog">dog</option>
+        <option value="cat">cat</option>
+        <option value="hamster">hamster</option>
+      </select>
+
+      <!-- Radios -->
+      <div id="container">
+        <label>
+          <input type="radio" name="petsize" id="large" value=" large"/> lage 
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="petsize"
+            id="medium"
+            value=" medium"
+          />medium
+        </label>
+        <label>
+          <input type="radio" name="petsize" id="small" value=" small" /> small
+        </label>
+      </div>
+
+      <!-- Checkboxes -->
+      <input type="checkbox" name="walk" id="walk" value="walking out"/>walk 
+      <input type="checkbox" name="sleep" id="sleep" value="sleep" />sleep
+      <input type="checkbox" name="eat" id="eat" value="eat" />eat
+
+      <!-- Textarea -->
+      <textarea name="comments" id="comments" placeholder="comments"></textarea>
+      <!-- Submit -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
